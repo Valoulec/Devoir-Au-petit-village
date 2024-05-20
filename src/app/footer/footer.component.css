@@ -1,0 +1,18 @@
+.foot {
+  background-color: #f9d0a3;
+}
+.lien {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+p {
+  font-family: "Comfortaa", sans-serif;
+}

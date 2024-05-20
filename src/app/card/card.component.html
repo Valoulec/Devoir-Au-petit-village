@@ -1,0 +1,47 @@
+<div class="bar">
+  <div>
+    <button (click)="sortOrder = 'asc'" class="croissant">
+      Trier par prix croissant
+    </button>
+    <button (click)="sortOrder = 'desc'" class="décroissant">
+      Trier par prix décroissant
+    </button>
+  </div>
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="Rechercher par nom"
+    class="recherche"
+  />
+</div>
+<div class="container">
+  <div class="row">
+    <div
+      class="col-lg-4 col-md-6 col-sm-12 carde"
+      *ngFor="
+        let product of card
+          | sortByPrice : sortOrder
+          | filterByName : searchText
+      "
+    >
+      <div class="card">
+        <div class="ima">
+          <img [src]="product.image" alt="" class="image img-fluid" />
+        </div>
+        <div class="card-body">
+          <h5 class="title">{{ product.name }}</h5>
+          <p>{{ product.description }}</p>
+          <p class="card-text">
+            <strong>Prix: {{ product.price }} €</strong>
+          </p>
+          <button
+            class="btn btn-primary"
+            [routerLink]="['/product', product.id]"
+          >
+            En savoir plus
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

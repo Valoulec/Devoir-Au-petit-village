@@ -1,0 +1,27 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: underline;
+  color: #da001e;
+  font-family: "Bubbleboddy neue", sans-serif;
+}
+h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  color: #da001e;
+  padding-left: 1%;
+  font-family: "Bubbleboddy neue", sans-serif;
+}
+ul {
+  padding-left: 3%;
+  font-family: "Comfortaa", sans-serif;
+}
+.about {
+  padding-left: 3%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+li {
+  font-family: "Comfortaa", sans-serif;
+}

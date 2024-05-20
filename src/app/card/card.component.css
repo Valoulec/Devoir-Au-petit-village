@@ -1,0 +1,48 @@
+.container {
+  margin-top: 10px;
+}
+.carde {
+  margin-top: 10px;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.ima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: #151217;
+  color: #fdd90b;
+  border: none;
+  font-family: "Comfortaa", sans-serif;
+}
+.btn:hover {
+  color: #da001e;
+  font-family: "Comfortaa", sans-serif;
+}
+.bar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.recherche {
+  display: flex;
+  width: 30%;
+}
+.title {
+  text-decoration: underline;
+}
+h5 {
+  font-family: "Bubbleboddy neue", sans-serif;
+}
+p {
+  font-family: "Comfortaa", sans-serif;
+}

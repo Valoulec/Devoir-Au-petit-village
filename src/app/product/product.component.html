@@ -1,0 +1,10 @@
+<app-header />
+<div *ngFor="let product of product" class="produit">
+  <img src="{{ product.image }}" alt="" class="image" />
+  <div class="description">
+    <h2>{{ product.name }}</h2>
+    <p class="texte">{{ product.description }}</p>
+    <p class="prix">{{ product.price }} €</p>
+  </div>
+</div>
+<app-footer />
